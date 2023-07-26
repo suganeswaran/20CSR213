@@ -22,7 +22,7 @@ app.get("/numbers", async (req, res) => {
     
     
     await Promise.all(call);
-    console.log(k);
+    // console.log(k);
     const sortedResponse = new Set([...k].sort((a, b) => a - b));
 
 res.json({"numbers":[...sortedResponse]});
