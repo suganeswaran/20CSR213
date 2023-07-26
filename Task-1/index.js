@@ -26,9 +26,9 @@ app.get("/numbers", async (req, res) => {
     const sortedResponse = new Set([...k].sort((a, b) => a - b));
 
 res.json({"numbers":[...sortedResponse]});
-    res.send("working");
+  
 })
 
 app.listen(8008, () => {
-  console.log("Running ");
+  console.log("Running on port number 8008");
 });
